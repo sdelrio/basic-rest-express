@@ -2,14 +2,24 @@
 
 # PrimerServicio
 
-
+Servicio básico de ejemplo para API Rest con express
 
 ## Usage
 
+### Típico ejemplo hola mundo
+
+- <http://localhost:3000/hola1>
+
+### Nombre pasado por URI
+
+- <http://localhost:3000/hola2/nombre>
+
+### Nombre pasado por parámetro GET
+
+- <http://localhost:3000/hola3?nombre=Pedro>
 
 
 ## Developing
-
 
 
 ### Tools

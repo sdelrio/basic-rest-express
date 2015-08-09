@@ -44,13 +44,14 @@ app.get('/hola1', function(request, response) {
 });
 
 
-/* Hola nomobre pasado en la URI http://localhost:3000/hola/nombre */
+/* Hola nombre pasado en la URI http://localhost:3000/hola/nombre */
 
 app.get('/hola2/:nombre', function(request, response) {
 	response.send('Hola ' + request.params.nombre);
 });
 
-/* hola?nombre=Pedro */
+/* Hola con parámetros GET */
+/* http://localhost:3000/hola3?nombre=Pedro */
 
 app.get('/hola3', function(request, response) {
 	var get_params = url.parse(request.url, true).query;
